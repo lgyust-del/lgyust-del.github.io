@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Park Yuna — Fashion Designer</title>
+    <meta name="description" content="10년차 의상 디자이너 박유나의 작업과 철학을 소개하는 포트폴리오 사이트." />
+    <meta name="color-scheme" content="dark" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-scrolled="false">
+      <a class="wordmark" href="#top" data-bind="meta.wordmark">PARK YUNA</a>
+      <nav aria-label="주요 메뉴" data-slot="nav"></nav>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero" id="about">
+        <div class="container">
+          <div class="hero-inner">
+            <p class="eyebrow" data-bind="hero.eyebrow"></p>
+            <h1 data-slot="hero-headline"></h1>
+            <p class="lede" data-bind="hero.lede"></p>
+            <div class="cta-row" data-slot="hero-ctas"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="stats reveal" aria-label="경력 요약">
+        <div class="container">
+          <ul class="stats-list" data-slot="stats"></ul>
+        </div>
+      </section>
+
+      <!-- Approach / values -->
+      <section class="approach reveal" id="approach">
+        <div class="container">
+          <header class="approach-head">
+            <p class="eyebrow" data-bind="approach.eyebrow"></p>
+            <h2 data-bind="approach.heading"></h2>
+          </header>
+          <div class="values-grid" data-slot="values"></div>
+        </div>
+      </section>
+
+      <!-- Selected work -->
+      <section class="work reveal" id="work">
+        <div class="container">
+          <header class="work-head">
+            <p class="eyebrow" data-bind="work.eyebrow"></p>
+            <h2 data-bind="work.heading"></h2>
+          </header>
+          <div class="work-grid" data-slot="projects"></div>
+        </div>
+      </section>
+
+      <!-- Philosophy -->
+      <section class="philosophy reveal" id="philosophy">
+        <div class="container">
+          <div class="philosophy-grid">
+            <p class="eyebrow" data-bind="philosophy.eyebrow"></p>
+            <blockquote class="philosophy-quote" data-bind="philosophy.quote"></blockquote>
+            <ul class="principles-list" data-slot="principles"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="contact reveal" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <p class="eyebrow" data-bind="contact.eyebrow"></p>
+            <h2 class="contact-headline" data-slot="contact-headline"></h2>
+            <p class="contact-body" data-bind="contact.body"></p>
+            <div class="cta-row" data-slot="contact-ctas"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <span class="wordmark" data-bind="meta.wordmark">PARK YUNA</span>
+          <span class="tagline" data-bind="footer.tagline"></span>
+          <div class="copyright" data-bind="footer.copyright"></div>
+          <div class="copyright" data-bind="footer.imageCredit"></div>
+        </div>
+        <nav class="footer-links" aria-label="연락 수단" data-slot="footer-links"></nav>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
