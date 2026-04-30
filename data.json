@@ -3,7 +3,7 @@
     "name": "유승택",
     "wordmark": "YOO SEUNGTAIK",
     "title": "Data Scientist · LG Electronics",
-    "email": "yoo.seungtaik@gmail.com",
+    "email": "lgyust@gmail.com",
     "github": "https://github.com/lgyust-del",
     "linkedin": "https://www.linkedin.com/in/yoo-seungtaik"
   },
@@ -14,11 +14,11 @@
     { "label": "연락", "href": "#contact" }
   ],
   "hero": {
-    "eyebrow": "DATA SCIENTIST · LG ELECTRONICS · 2003 → 2025",
+    "eyebrow": "DATA SCIENTIST · LG ELECTRONICS · 2004 → 2026",
     "headlineBefore": "현장의 문제를 ",
     "headlineItalic": "모델",
     "headlineAfter": "로 옮긴 22년.",
-    "lede": "TV·디스플레이부터 가전·생산 라인까지 — LG전자의 사업 현장에서 일어나는 문제를 데이터로 정의하고, 모델로 답해 왔습니다.",
+    "lede": "모바일에서 차량용 인포테인먼트 까지 — LG전자의 사업 현장에서 일어나는 문제를 데이터로 정의하고, 모델로 답해 왔습니다.",
     "ctaPrimary": { "label": "이력서 요청", "href": "#contact" },
     "ctaSecondary": { "label": "프로젝트 보기 →", "href": "#work" }
   },
