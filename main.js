@@ -169,16 +169,17 @@ function renderContact(data) {
 function renderFooterLinks(data) {
   const slot = $('[data-slot="footer-links"]');
   if (!slot || !data.meta) return;
-  const links = [];
-  if (data.meta.email) {
-    links.push({ label: 'Email', href: `mailto:${data.meta.email}` });
-  }
-  if (data.meta.portfolio) {
-    links.push({ label: 'Portfolio', href: data.meta.portfolio });
-  }
-  if (data.meta.instagram) {
-    links.push({ label: 'Instagram', href: data.meta.instagram });
-  }
+  // Render any of these meta fields, in order, when present.
+  const linkFields = [
+    { key: 'email',     label: 'Email',     prefix: 'mailto:' },
+    { key: 'github',    label: 'GitHub' },
+    { key: 'linkedin',  label: 'LinkedIn' },
+    { key: 'portfolio', label: 'Portfolio' },
+    { key: 'instagram', label: 'Instagram' },
+  ];
+  const links = linkFields
+    .filter((f) => Boolean(data.meta[f.key]))
+    .map((f) => ({ label: f.label, href: (f.prefix || '') + data.meta[f.key] }));
   slot.innerHTML = links
     .map((l) => `<a href="${escapeHTML(l.href)}" rel="noopener">${escapeHTML(l.label)}</a>`)
     .join('');
