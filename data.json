@@ -54,21 +54,27 @@
         "brand": "LG ELECTRONICS · HE 본부 · 2023–2024",
         "blurb": "글로벌 webOS TV 사용자의 시청 행태를 실시간으로 학습해 홈 화면을 재구성하는 추천 엔진. 시청 완주율 +18%, 콜드스타트 손실 -34%.",
         "size": "large",
-        "tone": "cool"
+        "tone": "cool",
+        "image": "assets/project-1.jpg",
+        "imageAlt": "어두운 배경 위로 흐르는 파란 추상 곡선의 데이터 시각화 이미지"
       },
       {
         "name": "QUALITY SENTINEL",
         "brand": "LG ELECTRONICS · 생산기술원 · 2021–2022",
         "blurb": "가전 조립 라인 센서 시계열 8,000만 건을 비지도 이상 탐지로 모니터링. 결함 검출 리드타임 4시간 → 12분, 라인당 폐기율 -22%.",
         "size": "small",
-        "tone": "neutral"
+        "tone": "neutral",
+        "image": "assets/project-2.jpg",
+        "imageAlt": "가전 조립 라인의 검사 공정을 가까이서 담은 산업 현장 사진"
       },
       {
         "name": "DEMAND HORIZON",
         "brand": "LG ELECTRONICS · H&A 본부 · 2019–2020",
         "blurb": "프리미엄 가전 12개 카테고리, 35개 권역의 12주 수요를 통합 예측. MAPE 7.2%로 재고 회전 +9%, 안전재고 -15%.",
         "size": "small",
-        "tone": "warm"
+        "tone": "warm",
+        "image": "assets/project-3.jpg",
+        "imageAlt": "부드럽게 번지는 따뜻한 그라데이션의 추상 이미지"
       }
     ]
   },
@@ -91,6 +97,7 @@
   },
   "footer": {
     "tagline": "Seoul-based data scientist · LG Electronics, 2003 – 2025.",
-    "copyright": "© 2026 Yoo SeungTaik (유승택). All rights reserved."
+    "copyright": "© 2026 Yoo SeungTaik (유승택). All rights reserved.",
+    "imageCredit": "Project covers via Unsplash — Christian Boragine, Homa Appliances, asi mong."
   }
 }
